@@ -1,1 +1,11 @@
-<p>feature works!</p>
+<section [ngStyle]="{'flex-direction': featureData?.swapPositions ? 'row-reverse' : 'row'}">
+    <div>
+        <h1>{{ featureData?.header }}</h1>
+        <h3>{{ featureData?.description }}</h3>
+    </div>
+    <div class="img-container">
+        @if (featureData?.imgUrl) {
+            <img [src]="featureData?.imgUrl" [alt]="featureData?.imgAlt">
+        }
+    </div>
+</section>
