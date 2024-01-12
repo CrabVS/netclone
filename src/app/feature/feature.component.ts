@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, HostListener, Input } from '@angular/core';
 import { Feature } from '../feature';
 import { CommonModule } from '@angular/common';
 
@@ -11,4 +11,12 @@ import { CommonModule } from '@angular/common';
 })
 export class FeatureComponent {
   @Input() featureData?: Feature;
+
+  windowSize = window.innerWidth;
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: Event) {
+    this.windowSize = (event.target as Window).innerWidth;
+    console.log(this.windowSize);
+  }
 }
