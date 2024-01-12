@@ -56,3 +56,12 @@ table {
 
 /* Global Styling */
 
+.screen-height {
+	height: 100vh;
+}
+
+@media (max-width: 800px) {
+	.screen-height {
+		height: 80vh;
+	}
+}
