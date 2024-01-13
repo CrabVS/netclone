@@ -5,11 +5,12 @@ import { BannerComponent } from './banner/banner.component';
 import { FeatureComponent } from './feature/feature.component';
 import { FeatureService } from './feature.service';
 import { Feature } from './feature';
+import { QuestionsComponent } from './questions/questions.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, BannerComponent, FeatureComponent],
+  imports: [CommonModule, RouterOutlet, BannerComponent, FeatureComponent, QuestionsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

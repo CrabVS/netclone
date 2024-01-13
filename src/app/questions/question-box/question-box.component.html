@@ -1,0 +1,15 @@
+<button class="q-box" (click)="toggleBox()">
+    <h3>{{ questionData?.question }}</h3>
+    @if (!isClosed) {
+        <span class="close-icon">x</span>
+    } @else {
+        <span class="open-icon">+</span>
+    }
+</button>
+@if (!isClosed) {
+    <div class="answer-box">
+        @for (answer of questionData?.answer; track $index) {
+            <p>{{ answer }}</p>
+        }
+    </div>
+}

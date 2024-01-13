@@ -127,6 +127,10 @@ form div button:active {
     background-color: rgb(153, 22, 29);
 }
 
+form label {
+    cursor: text;
+}
+
 @media (max-width: 1000px) {
     header {
         max-width: 90%;

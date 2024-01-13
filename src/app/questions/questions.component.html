@@ -1,0 +1,15 @@
+<section>
+    <h1>Frequently Asked Questions</h1>
+    @for (question of questionsData; track question.id) {
+        <app-question-box [questionData]="question"></app-question-box>
+    }
+</section>
+<section>
+    <form>
+        <label>Ready to watch? Enter your email to create or restart your membership.</label>
+        <div>
+            <input type="email" name="banner-email" id="banner-email" placeholder="Email address">
+            <button type="submit">Get Started ></button>
+        </div>
+    </form>
+</section>

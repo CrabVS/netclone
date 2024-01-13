@@ -39,6 +39,6 @@ export class FeatureService {
   ]
 
   getData() {
-    return this.featureData;
+    return this.featureData.slice();
   }
 }

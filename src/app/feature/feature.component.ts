@@ -17,6 +17,5 @@ export class FeatureComponent {
   @HostListener('window:resize', ['$event'])
   onResize(event: Event) {
     this.windowSize = (event.target as Window).innerWidth;
-    console.log(this.windowSize);
   }
 }
